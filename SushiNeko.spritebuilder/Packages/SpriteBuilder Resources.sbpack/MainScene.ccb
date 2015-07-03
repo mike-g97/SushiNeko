@@ -557,6 +557,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -570,7 +572,7 @@
 				<key>displayName</key>
 				<string>CCButton</string>
 				<key>memberVarAssignmentName</key>
-				<string>restartButtom</string>
+				<string>restartButton</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -911,7 +913,7 @@
 						<key>displayName</key>
 						<string>life</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>lifeBar</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -1006,8 +1008,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1036,7 +1036,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>40</real>
+							<real>42</real>
 							<integer>1</integer>
 							<integer>2</integer>
 							<integer>0</integer>
