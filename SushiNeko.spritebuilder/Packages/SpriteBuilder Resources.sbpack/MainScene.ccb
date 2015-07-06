@@ -10,13 +10,13 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>129</integer>
+	<integer>243</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>docDimensionsType</key>
 	<integer>0</integer>
 	<key>fileType</key>
@@ -182,7 +182,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.0</real>
+							<real>115</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>0</integer>
@@ -210,6 +210,8 @@
 						<string>Character.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -243,8 +245,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5220000147819519</real>
-							<real>-30</real>
+							<real>0.5</real>
+							<real>143</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>0</integer>
@@ -688,6 +690,37 @@
 			<dict>
 				<key>UUID</key>
 				<integer>12</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>1</key>
+					<dict>
+						<key>visible</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>visible</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>1</integer>
+									<key>value</key>
+									<true/>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>visible</string>
+							<key>type</key>
+							<integer>1</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCSprite</string>
 				<key>children</key>
@@ -812,6 +845,8 @@
 				<key>properties</key>
 				<array>
 					<dict>
+						<key>baseValue</key>
+						<integer>0</integer>
 						<key>name</key>
 						<string>visible</string>
 						<key>type</key>
@@ -932,7 +967,7 @@
 											<key>easing</key>
 											<dict>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>9</integer>
 											</dict>
 											<key>name</key>
 											<string>position</string>
@@ -969,6 +1004,31 @@
 									<string>position</string>
 									<key>type</key>
 									<integer>3</integer>
+								</dict>
+								<key>visible</key>
+								<dict>
+									<key>keyframes</key>
+									<array>
+										<dict>
+											<key>easing</key>
+											<dict>
+												<key>type</key>
+												<integer>0</integer>
+											</dict>
+											<key>name</key>
+											<string>visible</string>
+											<key>time</key>
+											<real>0.0</real>
+											<key>type</key>
+											<integer>1</integer>
+											<key>value</key>
+											<true/>
+										</dict>
+									</array>
+									<key>name</key>
+									<string>visible</string>
+									<key>type</key>
+									<integer>1</integer>
 								</dict>
 							</dict>
 						</dict>
@@ -1402,6 +1462,16 @@
 						<key>properties</key>
 						<array>
 							<dict>
+								<key>baseValue</key>
+								<false/>
+								<key>name</key>
+								<string>visible</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<true/>
+							</dict>
+							<dict>
 								<key>name</key>
 								<string>name</string>
 								<key>type</key>
@@ -1422,7 +1492,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.0</real>
+									<real>-225</real>
 									<integer>1</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -1470,6 +1540,37 @@
 					<dict>
 						<key>UUID</key>
 						<integer>8</integer>
+						<key>animatedProperties</key>
+						<dict>
+							<key>1</key>
+							<dict>
+								<key>visible</key>
+								<dict>
+									<key>keyframes</key>
+									<array>
+										<dict>
+											<key>easing</key>
+											<dict>
+												<key>type</key>
+												<integer>0</integer>
+											</dict>
+											<key>name</key>
+											<string>visible</string>
+											<key>time</key>
+											<real>0.0</real>
+											<key>type</key>
+											<integer>1</integer>
+											<key>value</key>
+											<true/>
+										</dict>
+									</array>
+									<key>name</key>
+									<string>visible</string>
+									<key>type</key>
+									<integer>1</integer>
+								</dict>
+							</dict>
+						</dict>
 						<key>baseClass</key>
 						<string>CCLabelTTF</string>
 						<key>children</key>
@@ -1485,6 +1586,8 @@
 						<key>properties</key>
 						<array>
 							<dict>
+								<key>baseValue</key>
+								<integer>0</integer>
 								<key>name</key>
 								<string>visible</string>
 								<key>type</key>
@@ -1794,7 +1897,7 @@
 						<integer>120</integer>
 						<key>animatedProperties</key>
 						<dict>
-							<key>2</key>
+							<key>0</key>
 							<dict>
 								<key>position</key>
 								<dict>
@@ -1832,7 +1935,7 @@
 											<integer>3</integer>
 											<key>value</key>
 											<array>
-												<real>26</real>
+												<real>11</real>
 												<real>48</real>
 											</array>
 										</dict>
@@ -1886,6 +1989,8 @@
 									<integer>1</integer>
 								</dict>
 							</dict>
+							<key>1</key>
+							<dict/>
 						</dict>
 						<key>baseClass</key>
 						<string>CCSprite</string>
@@ -1931,7 +2036,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-15.813322067260742</real>
+									<real>-18.79998779296875</real>
 									<real>48</real>
 									<integer>3</integer>
 									<integer>0</integer>
@@ -2006,15 +2111,13 @@
 								<array/>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
 						<integer>121</integer>
 						<key>animatedProperties</key>
 						<dict>
-							<key>2</key>
+							<key>0</key>
 							<dict>
 								<key>position</key>
 								<dict>
@@ -2106,6 +2209,8 @@
 									<integer>1</integer>
 								</dict>
 							</dict>
+							<key>1</key>
+							<dict/>
 						</dict>
 						<key>baseClass</key>
 						<string>CCSprite</string>
@@ -2123,7 +2228,7 @@
 						<array>
 							<dict>
 								<key>baseValue</key>
-								<false/>
+								<integer>0</integer>
 								<key>name</key>
 								<string>visible</string>
 								<key>type</key>
@@ -2151,7 +2256,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>1.7333334684371948</real>
+									<real>0.0</real>
 									<real>48</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2226,14 +2331,12 @@
 								<array/>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCNode</string>
+				<string>Tap LR</string>
 				<key>memberVarAssignmentName</key>
 				<string>tapButtons</string>
 				<key>memberVarAssignmentType</key>
@@ -2304,6 +2407,37 @@
 			<dict>
 				<key>UUID</key>
 				<integer>112</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>visible</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>0</integer>
+									</dict>
+									<key>name</key>
+									<string>visible</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>1</integer>
+									<key>value</key>
+									<true/>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>visible</string>
+							<key>type</key>
+							<integer>1</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCButton</string>
 				<key>children</key>
@@ -2311,13 +2445,23 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>CCButton</string>
+				<string>Play</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
 				<array>
+					<dict>
+						<key>baseValue</key>
+						<false/>
+						<key>name</key>
+						<string>visible</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<true/>
+					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
@@ -2333,8 +2477,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5220000147819519</real>
-							<real>42</real>
+							<real>0.5</real>
+							<real>40</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>0</integer>
@@ -2750,20 +2894,20 @@
 	<array>
 		<dict>
 			<key>autoPlay</key>
-			<false/>
+			<true/>
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
 				<array/>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>29</real>
+			<real>1</real>
 			<key>name</key>
-			<string>IntialLaunch</string>
+			<string>Initial Launch</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
@@ -2781,12 +2925,12 @@
 				<key>keyframes</key>
 				<array/>
 				<key>type</key>
-				<integer>10</integer>
+				<integer>11</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>autoPlay</key>
-			<true/>
+			<false/>
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
@@ -2795,7 +2939,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>length</key>
 			<real>1</real>
 			<key>name</key>
@@ -2803,13 +2947,13 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.033333335071802139</real>
+			<real>1</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>217.85252380371094</real>
+			<real>128</real>
 			<key>sequenceId</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>

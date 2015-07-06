@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B5DD961B4B2AAA00ECC18F /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B5DD951B4B2AAA00ECC18F /* GameOver.swift */; };
 		27E83D421B449138005E0707 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E83D411B449138005E0707 /* Character.swift */; };
 		27E83D481B44916C005E0707 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E83D471B44916C005E0707 /* Piece.swift */; };
 		5B121030197484FA004C1E1D /* SushiNekoActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* SushiNekoActivity.m */; };
@@ -150,6 +151,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27B5DD951B4B2AAA00ECC18F /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOver.swift; path = Source/GameOver.swift; sourceTree = "<group>"; };
 		27E83D411B449138005E0707 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = Source/Character.swift; sourceTree = "<group>"; };
 		27E83D471B44916C005E0707 /* Piece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Piece.swift; path = Source/Piece.swift; sourceTree = "<group>"; };
 		5B12100919748273004C1E1D /* libEGL.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEGL.so; path = /usr/lib/armv7a/libEGL.so; sourceTree = SDKROOT; };
@@ -440,6 +442,7 @@
 			children = (
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				7A046D7519E84C36004C4763 /* MainScene.swift */,
+				27B5DD951B4B2AAA00ECC18F /* GameOver.swift */,
 				27E83D411B449138005E0707 /* Character.swift */,
 				27E83D471B44916C005E0707 /* Piece.swift */,
 				D352B48019EC608A00829775 /* MetalShaders */,
@@ -821,6 +824,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				7A046D7919E84ED5004C4763 /* MainScene.swift in Sources */,
 				27E83D481B44916C005E0707 /* Piece.swift in Sources */,
+				27B5DD961B4B2AAA00ECC18F /* GameOver.swift in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
 				27E83D421B449138005E0707 /* Character.swift in Sources */,
 			);

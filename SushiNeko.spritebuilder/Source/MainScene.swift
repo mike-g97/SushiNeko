@@ -19,6 +19,8 @@ class MainScene: CCNode {
     weak var lifeBar: CCSprite!
     weak var scoreLabel: CCLabelTTF!
     weak var tapButtons: CCNode!
+    var addPiecesPosition: CGPoint?
+   
 
     var score: Int = 0 {
         didSet{
@@ -33,16 +35,22 @@ class MainScene: CCNode {
         }
     }
     
+    
+    override func onEnter() {
+        super.onEnter()
+        addPiecesPosition = piecesNode.positionInPoints
+    }
+    
     func didLoadFromCCB(){
         userInteractionEnabled = true
         
         for i in 0..<10 {
             var piece = CCBReader.load("Piece") as! Piece
-            var yPos = piece.contentSizeInPoints.height * CGFloat(i)
+            var yPos = piece.contentSizeInPoints.height * CGFloat(i) + 80
             
             pieceLastSide = piece.setObstacle(pieceLastSide)
             
-            piece.position = CGPoint(x: 7, y: yPos)
+            piece.position = CGPoint(x: 0, y: yPos)
             piecesNode.addChild(piece)
             pieces.append(piece)
         }
@@ -63,6 +71,8 @@ class MainScene: CCNode {
         
         if isGameOver() { return }
         
+        character.tap()
+        
         stepTower()
         
         score++
@@ -71,6 +81,8 @@ class MainScene: CCNode {
     func stepTower(){
         var piece = pieces[pieceIndex]
         
+        addHitPiece(piece.side)
+        
         var yDiff = piece.contentSize.height * 10
         piece.position = ccpAdd(piece.position, CGPoint(x: 0, y: yDiff))
         
@@ -78,8 +90,8 @@ class MainScene: CCNode {
         
         pieceLastSide = piece.setObstacle(pieceLastSide)
         
-        piecesNode.position = ccpSub(piecesNode.position,
-            CGPoint(x: 0, y: piece.contentSize.height))
+        var movePiecesDown = CCActionMoveBy(duration: 0.15, position: CGPoint(x: 0, y: -piece.contentSize.height))
+        piecesNode.runAction(movePiecesDown)
         
         pieceIndex = (pieceIndex + 1) % 10
         
@@ -90,7 +102,10 @@ class MainScene: CCNode {
     
     func triggerGameOver() {
         gameState = .GameOver
-        restartButton.visible = true
+        
+        var gameOverScreen = CCBReader.load("GameOver", owner: self) as! GameOver
+        gameOverScreen.score = score
+        self.addChild(gameOverScreen)
     }
     
     func isGameOver() -> Bool {
@@ -113,6 +128,7 @@ class MainScene: CCNode {
         CCDirector.sharedDirector().presentScene(scene, withTransition: transition)
     }
     
+    
     override func update(delta: CCTime) {
         if gameState != .Playing { return }
         timeLeft -= Float(delta)
@@ -129,11 +145,25 @@ class MainScene: CCNode {
         tapButtons.cascadeOpacityEnabled = true
         tapButtons.opacity = 0.0
         tapButtons.runAction(CCActionFadeIn(duration: 0.2))
+        
+        
+        
     }
     
     func start() {
         gameState = .Playing
         
         tapButtons.runAction(CCActionFadeOut(duration: 0.2))
+    }
+    
+    func addHitPiece(obstacleSide: Side) {
+        var flyingPiece = CCBReader.load("Piece") as! Piece
+        flyingPiece.position = addPiecesPosition!
+        
+        var animationName = character.side == .Left ? "FromLeft" : "FromRight"
+        flyingPiece.animationManager.runAnimationsForSequenceNamed(animationName)
+        flyingPiece.side = obstacleSide
+        
+        self.addChild(flyingPiece)
     }
 }
